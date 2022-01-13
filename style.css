@@ -1,0 +1,33 @@
+.lang{
+  font-size: 150%;
+  background-color: rgb(80,80,80);
+  color: white;
+}
+.nur{
+  margin: 10%
+}
+.gis{
+  padding: 50px;
+  border: 10px solid #000;
+  box-sizing: border-box;
+  border-radius: 20;
+}
+.disp{
+  display: flex;
+  justify-content: space-between;
+}
+.imag img{
+  height: 100px;
+  width: 100px;
+}
+.sa{
+  font-family: 'Times New Roman';
+}
+#foo{
+     position: fixed;
+     bottom: 0;
+     right: 0;
+}
+#foo img{
+  width: 35px;
+}
