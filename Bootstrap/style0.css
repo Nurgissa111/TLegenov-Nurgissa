@@ -1,0 +1,43 @@
+header{
+ border:1px solid #ccc;
+ text-align:center;
+ float:left;
+ width:100%;
+ margin:5px 0px;
+
+}
+
+.form-inline {
+  padding-left: 20px;
+}
+.navbar {
+  color:#fff;
+  padding-bottom: 20px;
+}
+.navbar-brand{
+  padding-left: 30px;
+}
+.nav-item{
+  color: #fff;
+}
+.title{
+  filter: brightness(60%);
+  width: 1600px;
+  height: 650px;
+}
+.sa{
+  width:1800px;
+  height: 430px;
+}
+.form-group{
+  padding-left: 20px;
+  padding-top: 50px;
+  width: 400px;
+  height: 40px;
+}
+.text1{
+  padding-left: 20px;
+  font-size: 25px;
+  padding-top: 10px;
+  color: #dee12d;
+}
