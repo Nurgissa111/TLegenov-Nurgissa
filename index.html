@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style1.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        </script>
+    <title>IT Sphere</title>
+    <style >
+    .carousel-inner img{
+      width: 100%;
+
+    }
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #3d4143;">
+      <a class="navbar-brand " href="index.html" style=" color: #ffffff; font-size:35px"
+       title="Informational Technologies Sphere"><strong>IT <small>sphere</small></strong></a>
+      <ul class="navbar-nav ml-auto ">
+          <a class="nav-link" href="index.html" style="color:#17a2b8;" >HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" style="color:#17a2b8;" >ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="color:#17a2b8;">CONTACTS</a>
+        </li>
+      </ul>
+
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign up</button>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Registration</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" >
+                <label for="Username"><b>Username</b></label>
+                <input type="text" placeholder=" Ведите Username" name="Username" required>
+                <br>
+                <br>
+                <label for="Password"><b>Password</b></label>
+                <input type="text" placeholder=" Ведите Password" name="Password" required>
+                <br>
+                <br>
+                <label for="ConfirmPassword"><b>Confirm Password</b></label>
+                <input type="text" placeholder=" повторите Password" name="ConfirmPassword" required>
+
+                <button class="button_disable" type="submit"  name="button">Register</button>
+                <div class="container signin">
+                  <p>Already have an account? <a href="#">Sign in</a>.</p>
+                </div>
+            </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+  </ul>
+
+  <!-- The slideshow -->
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="cyber.html"><img src="img/cyber.jpg" alt="Cyber Security" width="900" height="600"></a>
+      <div class="carousel-caption">
+        <h3 class="page-names">Educational Programs</h3>
+        <h1 class="page-name">Cyber Security</h1>
+      </div>
+      </div>
+    <div class="carousel-item">
+      <a href="ITman.html">
+      <img src="img/manag.jpg" alt="IT Management" width="900" height="600"></a>
+      <div class="carousel-caption">
+        <h1 class="page-name">IT Management</h1>
+    </div>
+  </div>
+    <div class="carousel-item">
+      <a href="media.html">  <img src="img/media.jpg" alt="Media Technologies" width="900" height="600">
+      </a>
+      <div class="carousel-caption">
+        <h1 class="page-name">Media Technologies</h1>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <a href="big.html"><img src="img/big3.jpg" alt="New York" width="900" height="600">
+      </a>
+      <div class="carousel-caption">
+        <h1 class="page-name">Big Data Analysis</h1>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <a href="soft.html"><img src="img/soft.jpg" alt="Software Engineering" width="900" height="600">
+      </a>
+      <div class="carousel-caption">
+        <h1 class="page-name">Software Engineering</h1>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <a href="comp.html"><img src="img/comp2.jpg" alt="Computer Science" width="900" height="600">
+      </a>
+      <div class="carousel-caption">
+        <h1 class="page-name">Computer Science</h1>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<div class="row">
+  <div class="column left4">
+    <video class="video1" width="550" height="400" controls>
+      <source src="img/video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="column right4">
+
+
+    <a class="laravel-icon" href="#"><p class="text-in-icon">NEW IDEAS AND CREATIVITY</p></a>
+    <a class="laravel-icon1" href="#"><p class="text-in-icon">LOYALTY TO ETHICS AND PRINCIPLES</p></a>
+    <a class="laravel-icon2" href="#"><p class="text-in-icon">ACHIEVEMENTS WITHOUT LIMITS</p></a>
+    <a class="laravel-icon3" href="#"><p class="text-in-icon">LEADERS OF THE FUTURE</p></a>
+    <a class="laravel-icon4" href="#"><p class="text-in-icon">PROFESSIONALS WORLD-CLASS</p></a>
+
+  </div>
+</div>
+<div class="hr2">
+  <hr>
+</div>
+<h1 class="univ">University</h1>
+<div class="hr3">
+  <hr>
+</div>
+
+
+
+<div class="university">
+  <div class="row">
+    <div class="column  left_side" >
+
+    <div class="yer uni1">
+      <p data-toggle="modal" data-target="#myModal1" class="name_university ">AITU</p>
+    </div>
+
+      <div class="modal fade" id="myModal1" role="dialogs">
+        <div class="modal-dialog">
+
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Astana It University</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img class="card-photo" src="img/AITU.jpg" alt="astana it">
+              <h1 class="card-title" title="AITU">Astana IT University</h1>
+              <div class="card-text">
+                <p><b>Astana IT University </b>is the leading digital transformation
+                  competence center in Central Asia. The university trains highly
+                  qualified specialists in the field of the digital economy based
+                   on interdisciplinary technologies and requires digital transformation
+                   through education, research and successful innovation. </p>
+              </div>
+              <h4 class="card-address">Educational Programs:</h4>
+              <ul class="card-ul">
+                <li>Information Technology</li>
+                <li>Cyber Security</li>
+                <li>Communications And Communication Technologies</li>
+              </ul>
+              <h2 class="card-subtitle">Contacts: </h2>
+              <p>Telephone:<a href="tel:+7 (7172)645-710">+7 (7172)645-710</a></p
+              <p class='1 tel'>Email:<a href="mailto:@astanait.edu.">@astanait.edu.kz</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="column  center">
+      <div class="yer uni1">
+        <p data-toggle="modal" data-target="#myModal2" class="name_university">NU</p>
+      </div>
+
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Nazarbayev University</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img class="card-photo" src="img/nu.jpg" alt="Nazarbayev University">
+              <h1 class="card-title"  title="NU">Nazarbayev University</h1>
+              <div class="card-text">
+                <p><b>Nazarbayev University (NU)</b> is an autonomous research university
+                  in Nur-Sultan, the capital of Kazakhstan. Founded as a result of the
+                  initiative of the first President of Kazakhstan, Nursultan Nazarbayev
+                   in 2010 (June),[1] it is an English-medium institution, with an international
+                    faculty and staff.</p>
+
+              </div>
+              <h4 class="card-address">Educational Programs:</h4>
+              <ul class="card-ul">
+                <li>Computer Science</li>
+                <li>Software Engineering</li>
+              </ul>
+              <h2 class="card-subtitle">Contacts: </h2>
+              <p>Telephone:<a href="tel:8 (7172) 70 66 88">8 (7172) 70 66 88</a></p
+              <p>Email:<a href="mailto:pressa@nu.edu.kz">pressa@nu.edu.kz</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="column  right_side" >
+      <div class="yer uni1">
+        <p data-toggle="modal" data-target="#myModal3" class="name_university">IITU</p>
+      </div>
+      <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">International Information Technology University</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img class="card-photo" src="img/iitu.jpg" alt="International information Technology University">
+              <h1 class="card-title" title="IITU">International information Technology University</h1>
+              <div class="card-text">
+                <p><b>International IT University</b> - established in close collaboration with
+                   educational organization iCarnegie which represents American IT university
+                    Carnegie Mellon in 2009 by order of President of Kazakhstan. Formation
+                     of the qualified, international recognized IT specialists in Kazakhstan
+                      became the purpose of creation of a higher educational institution of a
+                      similar profile. International IT University provided with grants from
+                      the government of Kazakhstan and national infocommunication companies,
+                       which cover disciplines by Kazakhstan and the U.S. educational systems. </p>
+
+              </div>
+              <h4 class="card-address">Educational Programs:</h4>
+              <ul class="card-ul">
+                <li>Information Technology</li>
+                <li>Cyber Security</li>
+                <li>Communications And Communication Technologies</li>
+              </ul>
+              <h2 class="card-subtitle">Contacts: </h2>
+              <p >Telephone:<a href="tel:8727320000"tel:8727320000>8727320000</a></p
+              <p>Email:<a href="mailto:@iitu.kz.">@iitu.kz</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="row">
+    <div class="column  left_side" >
+      <div class="yer uni2">
+        <p data-toggle="modal" data-target="#myModal4" class="name_university">KBTU</p>
+      </div>
+      <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Kazakh British Technical University</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img class="card-photo" src="img/kbtu.jpg" alt="Kazakh British Technical University">
+              <h1 class="card-title" title="KBTU">Kazakh British Technical University</h1>
+              <div class="card-text">
+                <p><b>Kazakh-British Technical University, or KBTU</b> is a research and
+                  educational institution located in Almaty, Kazakhstan. It was founded
+                  in 2001 KBTU is the first and only Kazakhstani university with internationally
+                   accredited IT programs by the U.S. agency, the Accreditation Board for
+                   Engineering and Technology. It is also the first and only Kazakhstani university
+                    to receive an international accreditation for its oil and gas programs in the
+                     UK by the Institution of Marine Engineering, Science and Technology. </p>
+              </div>
+              <h4 class="card-address">Educational Programs:</h4>
+              <ul class="card-ul">
+                <li>Information Technology</li>
+
+              </ul>
+              <h2 class="card-subtitle">Contacts: </h2>
+              <p >Telephone:<a href="tel:8 727 357 42 51">8 727 357 42 51</a></p
+              <p>Email:<a href="mailto:@kbtu.kz.">@kbtu.kz</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="column  center">
+      <div class="yer uni2">
+      <p data-toggle="modal" data-target="#myModal5" class="name_university">SDU</p>
+    </div>
+      <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Suleyman Demirel University</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img class="card-photo" src="img/sdu.jpg" alt="Suleyman Demirel University">
+              <h1 class="card-title">Suleyman Demirel University</h1>
+              <div class="card-text">
+                <p><b>Suleyman Demirel University</b> is a private university in Kaskelen,
+                   Almaty, Kazakhstan. It is named after Süleyman Demirel, the former
+                    prime minister and president of Turkey.The university was established
+                     in 1996, by the initiatives of the president of Kazakhstan, Nursultan
+                      Nazarbayev, and the former president of Turkey, Suleyman Demirel. </p>
+
+              </div>
+              <h4 class="card-address">Educational Programs:</h4>
+              <ul class="card-ul">
+                <li>Computer Science</li>
+                <li>Information Technology</li>
+              </ul>
+              <h2 class="card-subtitle">Contacts: </h2>
+              <p >Telephone:<a href="tel:+7 (727) 307 95 65">+7 (727) 307 95 65</a></p
+              <p >Email:<a href="mailto:@sdu.edu.kz​.">@sdu.edu.kz​</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="column  right_side" >
+      <div class="yer uni2">
+      <p data-toggle="modal" data-target="#myModal6" class="name_university">ENU</p>
+    </div>
+      <div class="modal fade" id="myModal6" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Eurasian National University</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img class="card-photo" src="img/enu.jpg" alt="University of International Business">
+              <h1 class="card-title">Eurasian National University </h1>
+              <div class="card-text">
+                <p>The L. N. Gumilyov <b>Eurasian National University (ENU),</b> is a Kazakh
+                   national research university and largest institution for higher education
+                    in Nur-Sultan. In 2021, the L.N. Gumilyov Eurasian National University
+                    was named as one of the Top 500 Universities in the World. </p>
+
+              </div>
+              <h4 class="card-address">Educational Programs:</h4>
+              <ul class="card-ul">
+                <li>Information Technology</li>
+              </ul>
+              <h2 class="card-subtitle">Contacts: </h2>
+              <p >Telephone:<a href="tel:7(7172)709-500">7(7172)709-500</a></p
+              <p >Email:<a href="mailto:enu@enu.kz.">enu@enu.kz</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="head_title">
+  <div class="row">
+    <div class="column left" >
+      <h2 class="names"><strong>IT <small>sphere</small></strong></h2>
+
+    </div>
+    <div class="column right" >
+      <a class="back" href="index.html">BACK TO TOP</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="bottom">
+  <div class="row">
+    <div class="column2 left2">
+      <p style="display:block;margin-left:auto;margin-right:auto;text-align:center;">
+        <br><a href="https://www.instagram.com/astana_it_university/"><i class="fa fa-2x fa-instagram" style="display:block;margin-left:auto;margin-right:auto; text-align: center; color:white;"></i></a>
+        <br><a href="https://www.youtube.com/c/AstanaITUniversity"><i class="fa fa-2x fa-youtube" style="display:block;margin-left:auto;margin-right:auto; text-align: center; color:white;"></i></a>
+        <br><a href="https://t.me/joinchat/TSBQ0XLkv0YTB9ar"><i class="fa fa-2x fa-telegram" style="display:block;margin-left:auto;margin-right:auto; text-align: center; color:white;"></i></a>
+        <br><a href="https://vk.com/v_aitu"><i class="fa fa-2x fa-vk" style="display:block;margin-left:auto;margin-right:auto; text-align: center; color:white;"></i></a>
+        <br><a href=""><i class="fa fa-2x fa-twitter" style="display:block;margin-left:auto;margin-right:auto; text-align: center; color:white;"></i></a>
+      </p>
+    </div>
+    <div class="column2 right2" >
+      <nav>
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active " >
+          <a class="nav-link" href="index.html" style="color:#fff;">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" style="color:#fff;">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="color:#fff;">CONTACTS</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+    <div class="column2 right3" >
+    <a href="mailto:kalibekov.ernaz@gmail.com" class="email">kalibekov.ernaz@gmail.com</a>
+<pre class="bottom_text">60/6 Kabanbay Batyr Ave, Nur-Sultan city,
+Republic of Kazakhstan, 010000</pre>
+
+<p>Reception:</p> <a href="tel:87475886926" class="tel">87475886926</a>
+
+
+
+    </div>
+  </div>
+
+
+</div>
+
+
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/1ea5d95555.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

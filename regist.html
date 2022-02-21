@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/forProgram.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title></title>
+    <script>
+  function validateForm() {
+  let result=true;
+  let x = document.forms["myForm"]["Username"].value;
+  let trueResult="successful user registration";
+  if (x == "") {
+    result=false;
+    alert("Name must be filled out");
+    return false;
+  }
+  let y=document.forms["myForm"]["Password"].value;
+  let z=document.forms["myForm"]["ConfirmPassword"].value;
+  if (y!=z) {
+    result=false;
+    alert("Password is incorrect");
+    return false;
+  }
+  if (result==true) {
+    alert("successful user registration");
+    return false;
+  }
+
+}
+</script>
+
+  </head>
+  <body>
+
+    <div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Registration</h4>
+        </div>
+        <div class="modal-body">
+          <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <label for="Username"><b>Username</b></label>
+            <input type="text" placeholder=" Ведите Username" name="Username" required>
+            <br>
+            <br>
+            <label for="Password"><b>Password</b></label>
+            <input type="text" placeholder=" Ведите Password" name="Password" required>
+            <br>
+            <br>
+            <label for="ConfirmPassword"><b>Confirm Password</b></label>
+            <input type="text" placeholder=" повторите Password" name="ConfirmPassword" required>
+            <button type="submit" name="button">Submit</button>
+        </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+  </body>
+</html>
