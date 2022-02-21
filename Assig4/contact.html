@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style1.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="index.js">
+
+        </script>
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #3d4143;">
+      <a class="navbar-brand " href="index.html" style=" color: #ffffff; font-size:35px"
+       title="Informational Technologies Sphere"><strong>IT <small>sphere</small></strong></a>
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active " >
+          <a class="nav-link" href="index.html"style="color:#17a2b8;" >HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"style="color:#17a2b8;" >ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="color:#17a2b8;">CONTACTS</a>
+        </li>
+      </ul>
+
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign up</button>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Registration</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <label for="Username"><b>Username</b></label>
+                <input type="text" placeholder=" Ведите Username" name="Username" required>
+                <br>
+                <br>
+                <label for="Password"><b>Password</b></label>
+                <input type="text" placeholder=" Ведите Password" name="Password" required>
+                <br>
+                <br>
+                <label for="ConfirmPassword"><b>Confirm Password</b></label>
+                <input type="text" placeholder=" повторите Password" name="ConfirmPassword" required>
+                <button type="submit" class="button_disable" name="button">Register</button>
+                <div class="container signin">
+                  <p>Already have an account? <a href="#">Sign in</a>.</p>
+                </div>
+            </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </nav>
+    <div class="image">
+      <img src="It.jpg" alt=""  width="1000" height="500">
+    </div>
+    <h2 class="word"><strong>CONTACTS</strong></h2>
+    <pre class="paragraph">
+      <h3>ADMISSION COMMITTEE </h3>
+      (7172) 645710
+      u.kudiretbay@astanait.edu.kz
+      Working hours: every day from 9:00 to 18:00
+    </pre>
+    <div class="hr">
+    <hr>
+    </div>
+    <pre class="paragraph">
+      <h3>OFFICE REGISTRAR</h3>
+      DEPARTMENT (7172) 645707
+      aliya.koitanova@astanait.edu.kz
+    </pre>
+    <div class="hr">
+    <hr>
+    </div>
+    <pre class="paragraph">
+      <h3>DEPARTMENT OF SCIENCE AND INNOVATION</h3>
+      (7172) 645713
+      nurkhat.zhakiyev@astanait.edu.kz
+    </pre>
+    <div class="hr">
+    <hr>
+    </div>
+  </body>
+</html>
